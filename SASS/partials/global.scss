@@ -1,0 +1,222 @@
+
+
+//primary color
+$primary-color1:#FFFFFF;
+$primary-color2:#335576;
+$primary-color3:#DB7A4E;
+$primary-color4:#FEFAF5;
+
+
+//border radius
+$radius:5px;
+
+//display
+$display:flex;
+
+//backgroundsize
+$background-size:cover;
+$background-size:100%;
+
+//responsive design
+$tablet-breakpoint: 768px;
+$phone-breakpoint:600px;
+
+@mixin desktop {
+    @media (min-width:1280px) {
+        @content
+    }
+}
+
+body {
+    &__content {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        width:80%;
+        color: white;
+
+        @include desktop {
+            bottom: 20%;
+            left: 10%;
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+    .page-wrap {
+        width: 95%;
+    }
+
+    .content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+
+    .sidebar {
+        width:30%;
+    }
+}
+
+@media screen and (min-width: $phone-breakpoint) {
+    .page-wrap {
+        width: 95%;
+    }
+
+    .content {
+        width: 60%;
+        padding: 3% 4%;
+    }
+
+    .sidebar {
+        width:30%;
+    }
+}
+
+
+body {
+    font-family:"Verdana";
+    font-weight: 400;
+    margin: 0px;
+	border: 0px;
+	font-size: 100%;
+}
+
+
+h1 {
+    font-family:"Verdana";
+    font-size:60px;
+    font-weight:700;
+}
+
+
+h2 {
+    font-family:"Verdana";
+    font-size:33px;
+    font-weight:700;
+    color:$primary-color2;
+}
+
+
+h3 {
+    font-family:"Verdana";
+    font-size:33px;
+    font-weight:400;
+}
+
+p {
+    font-family:"Verdana";
+    font-size:18px;
+    font-weight: 400;
+}
+
+
+button {
+    background-color:$primary-color3;
+    color:$primary-color1;
+    font-size:18px;
+    font-weight:300;
+    width:220px;
+    padding:20px 20px 20px 20px;
+    border:none;
+    border-radius: 30px;
+}
+
+
+
+button:hover {
+text-decoration:underline;
+}
+
+.navsec__part2--home:hover {
+    border-bottom: 5px solid $primary-color3;
+}
+
+
+
+.navsec{
+    background-color:$primary-color1;
+    height:120px;
+    display:$display;
+    justify-content: space-between;
+    
+&__part1{
+    display:$display;
+    align-items:center;
+    margin:20px 20px 20px 20px;
+    padding:0px 0px 0px 60px;
+}
+
+&__part2{
+    display:$display;
+    justify-content: flex-end;
+    align-items:center;
+    padding:20px 20px 20px 20px;
+    text-decoration:none;
+    margin:20px 20px 20px 20px;
+
+&--list{
+    list-style-type: none;
+    display:$display;
+    flex-direction:row;
+}
+
+&--home{
+    text-decoration:none;
+    margin:20px 20px 20px 20px;
+    font-size:18px;
+    color:$primary-color2;
+    display:$display;
+    justify-content: flex-end;
+}
+
+}
+}
+
+.footer{
+    background-color:$primary-color4;
+    display:$display;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin:0px 0px 0px 0px;
+    padding:0px 300px 0px 300px;
+
+    &__card{
+
+        &--para{
+            font-size:18px;
+            font-weight:400;
+            color:$primary-color3;
+            width:380px;
+            margin-bottom:10px;
+            margin-top:0px;
+            padding-bottom:0px;
+            padding-top:0px;
+        }
+
+
+        &--para2{
+            color:$primary-color2;
+            margin-top:0px;
+        }
+        
+        &--hours{
+            display:$display;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin:0px 0px 0px 0px;
+        }
+
+       &--social {
+        display:$display;
+        flex-direction:row;
+        }
+
+        &--icon{
+            margin:20px 80px 20px 0px;
+            text-decoration: none;
+        }
+        }
+
+    }

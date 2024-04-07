@@ -1,0 +1,256 @@
+@use './partials/global.scss' as *;
+
+
+@mixin display ($display) {
+    display:$display;
+}
+
+@mixin background-size($backgroundsize) {
+    background-size:$backgroundsize
+}
+
+
+
+.maincontainer {
+  background-image:url("../assets/Images/hawaii.jpg");
+  display:$display;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: 800px;
+  flex-direction:column;
+  padding:20px 20px 100px 20px;
+
+
+
+  &__header {
+    color:$primary-color1;
+    margin:40px 20px 20px 60px;
+
+  }
+
+  &__cardcontainer {
+    display:$display;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin:20px 20px 20px 20px;
+  }
+
+
+  &__card {
+    align-items:center;
+    justify-content:center;
+    display:$display;
+    flex-direction:column;
+    background-color:$primary-color1;
+    border:none;
+    padding:10px 40px 60px 40px;
+    width:300px;
+    height:600px;
+    border-radius:5px;
+ 
+    &--list {
+        padding:0px 0px 0px 0px;
+        margin:0px 0px 0px 0px;
+    }
+      
+
+
+&--title{
+  text-align:center;
+  margin:0px 0px 10px 0px;
+  padding:0px 0px 0px 0px;
+  display:$display;
+  justify-content:center;
+  border-bottom:5px;
+  border:5px solid $primary-color2;
+  text-decoration:none;
+  box-sizing:border-box;
+  border-right-width:0px;
+  border-left-width:0px;
+  border-top-width:0px;
+  border-bottom-style:solid;
+  border-bottom-width:5px;
+  width:300px;
+}
+
+
+&--item{
+  text-align:center;
+  border:none;
+  display:$display;
+  justify-content:center;
+  background-color:$primary-color4;
+  width:300px;
+  height:60px;
+  text-align:center;
+  background-position:center;
+  margin:20px 0px 20px 0px;
+  padding:10px 10px 10px 10px;
+
+}
+
+}
+}
+
+.maincontainer1 {
+    background-image:url("../assets/Images/iceland.jpg");
+    display:$display;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 800px;
+    flex-direction:column;
+    padding:20px 20px 100px 20px;
+  
+  
+    &__header {
+      color:$primary-color1;
+      margin:40px 20px 20px 60px;
+  
+    }
+  
+    &__cardcontainer {
+      display:$display;
+      flex-direction:row;
+      justify-content: space-evenly;
+      margin:20px 20px 20px 20px;
+    }
+  
+  
+    &__card {
+      align-items:center;
+      justify-content:center;
+      display:$display;
+      flex-direction:column;
+      background-color:$primary-color1;
+      border:none;
+      padding:10px 40px 60px 40px;
+      width:300px;
+      height:600px;
+      border-radius:5px;
+    
+   
+      &--list {
+          padding:0px 0px 0px 0px;
+          margin:0px 0px 0px 0px;
+      }
+  
+  
+  &--title{
+    text-align:center;
+    margin:0px 0px 10px 0px;
+    padding:0px 0px 0px 0px;
+    display:$display;
+    justify-content:center;
+    border-bottom:5px;
+    border:5px solid $primary-color2;
+    text-decoration:none;
+    box-sizing:border-box;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-top-width:0px;
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+    width:300px;
+}
+
+  
+  &--item{
+    text-align:center;
+    border:none;
+    display:$display;
+    justify-content:center;
+    background-color:$primary-color4;
+    width:300px;
+    height:60px;
+    text-align:center;
+    background-position:center;
+    margin:20px 0px 20px 0px;
+    padding:10px 10px 10px 10px;
+  
+  }
+ }
+}
+
+  .maincontainer2 {
+    background-image:url("../assets/Images/greece.jpg");
+    display:$display;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 800px;
+    flex-direction:column;
+    padding:20px 20px 100px 20px;
+  
+  
+    &__header {
+      color:$primary-color1;
+      margin:40px 20px 20px 60px;
+  
+    }
+  
+    &__cardcontainer {
+      display:$display;
+      flex-direction:row;
+      justify-content: space-evenly;
+      margin:20px 20px 20px 20px;
+    }
+  
+  
+    &__card {
+      align-items:center;
+      justify-content:center;
+      display:$display;
+      flex-direction:column;
+      background-color:$primary-color1;
+      border:none;
+      padding:10px 40px 60px 40px;
+      width:300px;
+      height:600px;
+      border-radius:5px;
+    
+   
+      &--list {
+          padding:0px 0px 0px 0px;
+          margin:0px 0px 0px 0px;
+      }
+  
+  
+  &--title{
+    text-align:center;
+    margin:0px 0px 10px 0px;
+    padding:0px 0px 0px 0px;
+    display:$display;
+    justify-content:center;
+    border-bottom:5px;
+    border:5px solid $primary-color2;
+    text-decoration:none;
+    box-sizing:border-box;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-top-width:0px;
+    border-bottom-style:solid;
+    border-bottom-width:5px;
+    width:300px;
+}
+
+  
+  &--item{
+    text-align:center;
+    border:none;
+    display:$display;
+    justify-content:center;
+    background-color:$primary-color4;
+    width:300px;
+    height:60px;
+    text-align:center;
+    background-position:center;
+    margin:20px 0px 20px 0px;
+    padding:10px 10px 10px 10px;
+  
+  }
+  
+  }
+
+}/*# sourceMappingURL=menu.css.map */

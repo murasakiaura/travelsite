@@ -1,0 +1,110 @@
+
+@use './partials/global.scss' as *;
+
+
+@mixin background-size($background-size) {
+    background-size:$backgroundsize
+}
+
+
+
+.navintro{ 
+    background-color:$primary-color4;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    display:$display;
+    align-items:center;
+    text-align:left;
+
+
+    &__introword {
+    margin:0px 80px 20px 80px;
+    padding:0px 20px 80px 40px;
+    color:$primary-color2;
+
+
+    &--head {
+    color:$primary-color2;
+    margin:0px 0px 0px 0px;
+    padding-top:0px;
+    padding-left:0px;
+    text-align:left;
+    display:$display;
+    font-size:45px;
+    font-weight:700;
+    }
+  
+    }
+    
+    &__img{
+        display:$display;
+        justify-content:flex-end;
+        height:500px;
+        width:500px;
+        margin:0px 0px 100px 80px;
+        }
+    }
+
+
+.main{
+    background-color:$primary-color1;
+    margin:20px 20px 20px 20px;
+    padding:0px 0px 0px 60px;
+    display:$display;
+    flex-direction:column;
+
+    &__head{
+        display:$display;
+        align-items:center;
+        justify-content:left;
+
+    }
+    
+    &__container{
+        display:$display;
+        flex-direction:row;
+        justify-content: space-evenly;
+    }
+
+    &__card:hover {
+        opacity: 50%;
+    }
+
+    &__card{
+        width:300px;
+        height:400px;
+        border-radius:5px;
+        border:1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        background-color:none;
+        display:$display;  
+        margin:0px 0px 0px 0px;
+        padding:0px 0px 0px 0px;
+        background-size: cover;
+        position:relative;
+        overflow:hidden;
+     
+
+        &--img{
+        height:100%;
+        width:100%;
+        margin:0px 0px 0px 0px;
+        padding:0px 0px 0px 0px;
+        }
+
+        &--word{
+        display:$display;
+        margin:0px 0px 0px 0px;
+        padding:0px 0px 0px 0px;
+        color:$primary-color1;
+        position:absolute;
+        bottom:0;
+        right:20px;
+        
+    
+    }
+}
+
+}/*# sourceMappingURL=menu.css.map */

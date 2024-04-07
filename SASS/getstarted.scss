@@ -1,0 +1,41 @@
+@use './partials/global.scss' as *;
+
+.header {
+    color:$primary-color2;
+    background-color: $primary-color4;
+    padding:20px 20px 20px 20px;
+}
+
+.main {
+    display:$display;
+    align-items:center;
+    text-align:left;
+    background-image:url("../assets/Images/hero.png");
+    background-position: center;
+    flex-direction:column;
+    margin:0px 0px 0px 0px;
+    justify-content: space-evenly;
+    
+    
+&__label {
+    text-align:left;
+    margin:20px 20px 20px 20px;
+    padding:20px 20px 20px 20px;
+}
+    
+&__input {
+    margin:20px 20px 20px 20px;
+    padding:20px 20px 20px 20px;
+    text-align:left;
+}
+
+&__input1 {
+    margin:40px 20px 20px 40px;
+    padding:80px 20px 20px 80px;
+    text-align:left;
+}
+
+&__para {
+    color:$primary-color2;
+}
+}
